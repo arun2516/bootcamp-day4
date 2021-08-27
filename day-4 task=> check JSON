@@ -1,0 +1,38 @@
+                             by using for in loop
+
+
+
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+function check(obj1,obj2){
+for(let key in obj1){
+    if(!(key in obj2)){
+        return false;
+    }
+    if(obj1[key] !== obj2[key]){
+        return false;
+    }
+}
+return true;
+}
+
+console.log(check(obj1,obj2));
+
+                                  
+                                  
+                                  (or) by using forEach(function());
+
+
+
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+Object.keys(obj1).forEach(function(element){
+    if(!(element in obj2)){
+        console.log("false");
+    }
+    if(obj1[element]!== obj2[element]){
+        console.log("false");
+    }else{
+    console.log("true");
+    }
+});
