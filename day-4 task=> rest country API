@@ -1,0 +1,23 @@
+                                              BY USING FOR LOOP:
+                                              
+                                              
+for(i=0;i<country.length;i++){
+console.log(country[i].name);
+}
+
+for(i=0;i<country.length;i++){
+console.log(country[i].region,country[i].subregion,country[i].population);
+}
+
+
+                                            BY USING forEach(function()):
+                                            
+                                            
+    country.forEach(function(element){
+    console.log("flag:" ,element.flag);
+});                                        
+
+
+country.forEach(function(element){
+    console.log("NAME:",element.name,",","REGION:",element.region,",","SUB-REGION:",element.subregion,",","POPULATION:",element.population);
+});
