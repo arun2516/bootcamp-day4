@@ -1,9 +1,11 @@
                              by using for in loop
 
 
-
+INPUT:
 var obj1 = { name: "Person 1", age:5 };
 var obj2 = { age:5, name: "Person 1" };
+
+SOLUTION:
 function check(obj1,obj2){
 for(let key in obj1){
     if(!(key in obj2)){
@@ -18,14 +20,20 @@ return true;
 
 console.log(check(obj1,obj2));
 
+OUTPUT:
+true
+
                                   
                                   
                                   (or) by using forEach(function());
 
-
+INPUT:
 
 var obj1 = { name: "Person 1", age:5 };
 var obj2 = { age:5, name: "Person 1" };
+
+SOLUTION:
+
 Object.keys(obj1).forEach(function(element){
     if(!(element in obj2)){
         console.log("false");
@@ -36,3 +44,6 @@ Object.keys(obj1).forEach(function(element){
     console.log("true");
     }
 });
+
+OUTPUT:
+true
