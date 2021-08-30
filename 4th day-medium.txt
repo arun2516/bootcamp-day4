@@ -1,0 +1,1006 @@
+Task 1: Simple Programs todo for variables
+
+1) Declare four variables without assigning values and print them in console
+
+let a;
+let b;
+let c;
+let d;
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+OUTPUT:
+undefined
+undefined
+undefined
+undefined
+
+
+2)How to get value of the variable myvar as output
+
+let var =1;
+console.log(var);
+
+OUTPUT:
+1
+
+3)Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+let firstname ="arun";
+let lastname = "pandian";
+let maritalstatus = "single";
+let country = "india";
+let age = 27;
+
+
+4) Declare variables to store your first name, last name, marital status, country and age in a single line
+
+let details ={firstname:"arun",lastname:"pandian",maritalstatus:"single",country:"india",age:27};
+
+
+5)Declare variables and assign string, boolean, undefined and null data types
+
+let str = "string";
+let bol = true;
+let a;
+let nu = null;
+
+
+
+Task 2: Simple Programs todo for Operators
+
+1) Square of a number:
+
+let a = 2;
+console.log(a ** 2);
+
+OUTPUT:
+16
+
+
+2) Swapping 2 numbers:
+
+let a =4;
+let b =6;
+ let temp =a;
+ a = b;
+ b=temp;
+ 
+ console.log(a);
+ console.log(b);
+
+OUTPUT:
+6
+4
+
+3) Addition of 3 numbers:
+
+let a =[1,2,5];
+let count =0
+for(let key of a){
+    count += key;
+}
+console.log(count);
+
+OUTPUT:
+8
+
+4) Celsius to Fahrenheit conversion:
+
+function cel2far(temp){
+let res = (temp * (9/5)) +32;
+return res;
+}
+console.log(cel2far(35));
+
+OUTPUT:
+95
+
+5) Meter to miles:
+
+function metre2mile(met){
+let mile = met / 1609 ;
+return mile;
+}
+console.log(metre2mile(1));
+
+OUTPUT:
+0.0006215040397762585
+
+6) Pounds to kg:
+
+function pound2kg(pound){
+let kg = pound/2.205 ;
+return kg;
+}
+console.log(pound2kg(2));
+
+OUTPUT:
+0.9070294784580498
+
+7) Calculate Batting Average:
+
+function batavg(val1,val2){
+    let count =0;
+    for(let key of val1){
+        count += key;
+    }
+    let batavg = count / val2;
+    return batavg;
+}
+console.log(batavg([30,56,71,23,65],5));
+
+OUTPUT:
+49
+
+
+8) Calculate five test scores and print their average:
+
+let test1 = 76;
+let test2 = 82;
+let test3 = 72;
+let test4 = 81;
+let test5 = 90;
+let average = (test1+test2+test3+test4+test5) /5;
+console.log(average);
+
+OUTPUT:
+80.2
+
+
+9) Power of any number x ^ y:
+
+function powofany(x,y){
+    return x ** y ;
+}
+console.log(powofany(2,3));
+
+OUTPUT:
+8
+
+
+10) Calculate Simple Interest:
+
+function si(p,n,r){
+    let simpleintrest = p*n*(r/100);
+    return simpleintrest;
+}
+console.log(si(1000,2,1.5));
+
+OUTPUT:
+30
+
+
+11) Calculate area of an equilateral triangle:
+
+function equi(a){
+    let area = (Math.sqrt(3)/4) *(a**2);
+    return area;
+}
+console.log(equi(3));
+
+OUTPUT:
+3.8971143170299736
+
+
+12) Area Of Isosceles Triangle:
+
+function iso(b,h){
+    let area = (b*h)/2
+    return area;
+}
+console.log(iso(3,5));
+
+OUTPUT:
+7.5
+
+
+13) Volume Of Sphere:
+
+function sphvol(r){
+    let volume = (4/3) *(22/7)* (r ** 3);
+    return volume;
+}
+console.log(sphvol(5));
+
+OUTPUT:
+523.8095238095237
+
+
+14) Volume Of Prism:
+
+function prismvol(b,h){
+    let volume = b*h;
+    return volume;
+}
+console.log(prismvol(5,7));
+
+
+OUTPUT:
+35
+
+
+15) Find area of a triangle:
+
+function tiangle_area(b,h){
+    let area = (b*h)/2;
+    return area;
+}
+console.log(tiangle_area(2,5));
+
+OUTPUT:
+5
+
+
+16) Give the Actual cost and Sold cost, Calculate Discount Of Product:
+
+function discount(actual_cost,sold_cost){
+    let disc = actual_cost - sold_cost;
+    return disc;
+}
+console.log(discount(20,17));
+
+OUTPUT:
+3
+
+
+17) Given their radius of a circle and find its diameter, circumference and area.
+
+
+function area_circle(r){
+    let area = (22/7) * (r**2);
+    return area;
+}
+
+function circum_circle(r){
+    let circum = 2 * (22/7) * r ;
+    return circum;
+}
+
+function diameter(r){
+    let dia = r*2;
+    return dia;
+}
+
+console.log(area_circle(2));
+console.log(circum_circle(2));
+console.log(diameter(2));
+
+OUTPUT:
+12.571428571428571
+12.571428571428571
+4
+
+
+18) Given two numbers and perform all arithmetic operations:
+
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2 ** 2);
+console.log(2/2);
+console.log(2%2);
+let x =2;
+x++;
+console.log(x);
+let y = 3;
+y--;
+console.log(y);
+
+let xx = 2;
+++xx;
+console.log(xx);
+
+let yy=3;
+--yy;
+console.log(yy);
+
+OUTPUT:
+4
+0
+4
+4
+1
+0
+3
+2
+3
+2
+
+
+19) Display the asterisk pattern as shown below(No loop needed):
+
+console.log( "*****\n*****\n*****\n*****");
+
+OUTPUT:
+
+*****
+*****
+*****
+*****
+
+20) Calculate electricity bill?
+For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer
+ if per unit rate is 10?
+
+let consump = (100 * 24) * 30;
+let unit_rate = 10;
+ let total_rate = (consump/1000) * unit_rate;
+ console.log(total_rate);
+
+OUTPUT:
+720
+
+
+Task 3: Simple Programs todo for Condition , Looping and Arrays:
+
+1) Write a loop that makes seven calls to console.log to output the following triangle: 
+
+let str ="";
+for(i=0;i<7;i++){
+    str += "#";
+    console.log(str);
+}
+
+OUTPUT:
+#
+##
+###
+####
+#####
+######
+#######
+
+
+2) Iterate through the string array and print it contents:
+
+INPUT:
+
+var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"]
+
+SOLUTION:
+
+var strArray= ["<option>Jazz</option>","<option>Blues</option>","<option>New Age</option>","<option>Classical</option>","<option>Opera</option>"];
+console.log(strArray);
+
+OUTPUT:
+[ 'Jazz',
+  'Blues',
+  'New Age',
+  'Classical',
+  'Opera' ]
+
+
+3) write a code to count the elements in the array . Don’t use length property:
+var myarray=[11,22,33,44,55]
+
+var myarray=[11,22,33,44,55];
+let count =0;
+for(let key of myarray){
+    count += key;
+}
+console.log(count);
+
+OUTPUT:
+165
+
+
+4) 
+i) Find the length of your foods array
+let foods = ["idly","dhosa","chapati","parotta","chicken","mutton","kothuparotta","kothukari","briyani","milkshake","chilli parotta","fried rice","noodles","ravadhosa","tandoori","shawarma","grill-chicken","kadai-chicken","kadai","botti"];
+
+console.log(foods.length);
+
+output: 20
+
+ii) Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+
+let foods = ["idly","dhosa","chapati","parotta","chicken","mutton","kothuparotta","kothukari","briyani","milkshake","chilli parotta","fried rice","noodles","ravadhosa","tandoori","shawarma","grill-chicken","kadai-chicken","kadai","botti"];
+
+console.log(foods[4]);
+
+OUTPUT:
+chicken
+
+
+5) Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+let friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+friends.splice(0,1,"Munnabai");
+console.log(friends);
+
+OUTPUT:
+[ 'Munnabai',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'Jeff',
+  'AAK chandran' ]
+
+
+6) Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+
+let friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+for(let key of friends){
+    if(key === "CaptianAmerica"){
+        break;
+    }
+    console.log(key);
+}
+
+OUTPUT:
+Mari
+MaryJane
+
+
+7) Find the person is ur friend or not.
+
+let friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+for(let key of friends){
+    if(key === "Jeff"){
+        console.log("true");
+    }
+   
+}
+
+OUTPUT:
+true;
+
+
+8) We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list
+
+var friends1 = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+var friends2 = ["Gabbar","Rajinikanth","Mass","Spiderman","Jeff","ET"];
+
+var friends = friends1.concat(friends2);
+console.log(friends.sort());
+
+OUTPUT:
+[ 'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman' ]
+
+
+1) Get the first item, the middle item and the last item of the array
+
+var friends1 = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+console.log(friends1[0]);
+console.log(friends1[friends1.length -1]);
+
+let l = Math.abs((0 - (friends1.length-1))/2);
+console.log(friends1[Math.floor(l)]);
+
+OUTPUT:
+Mari
+AAK chandran
+CaptianAmerica
+
+
+2) Add your name to the end of the friends array, and add another name to beginning.
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+friends.push("arun");
+friends.unshift("raja");
+console.log(friends);
+
+OUTPUT:
+[ 'raja',
+  'Mari',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'Jeff',
+  'AAK chandran',
+  'arun' ]
+
+3)  Add Mr or Ms to the names in the friends array.
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+let f =[];
+for(let key of friends){
+    key = "Mr."+key;
+    f.push(key);
+}
+console.log(f);
+
+OUTPUT:
+[ 'Mr.Mari',
+  'Mr.MaryJane',
+  'Mr.CaptianAmerica',
+  'Mr.Munnabai',
+  'Mr.Jeff',
+  'Mr.AAK chandran' ]
+
+
+4) Concat all the names the friends array and return as comma “,” seperated string
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+console.log(friends.join(","));
+
+OUTPUT:
+Mari,MaryJane,CaptianAmerica,Munnabai,Jeff,AAK chandran
+
+
+5) Find the friends names who has letter ‘a’ and return the list.
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+let res =[];
+for(let key of friends){
+    let r = key.split("");
+    for(i=0;i<r.length;i++){
+        if(r[i] == 'a'){
+            res.push(r.join(""));
+            break;
+        }
+    }
+}
+console.log(res);
+
+OUTPUT:
+[ 'Mari',
+  'MaryJane',
+  'CaptianAmerica',
+  'Munnabai',
+  'AAK chandran' ]
+
+
+6) Find the avg length of all the friends names. Get the individual length of the names and do the avg:
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+let count =0;
+for(let key of friends){
+    let r = key.split("");
+    count = count + r.length;
+}
+console.log(count/friends.length);
+
+OUTPUT:
+8.333333333333334
+
+
+7)Find the names and return the list starting with letter M.
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+let res=[];
+for(let key of friends){
+    
+    let r = key.split("");
+    if(r[0] == "M"){
+        res.push(r.join(""));
+        
+    }
+}
+console.log(res);
+
+OUTPUT:
+[ 'Mari', 'MaryJane', 'Munnabai' ]
+
+
+8) Find the name with max characters and return the name.
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+let res={};
+for(let key of friends){
+    let r = key.split("");
+    let l = r.length;
+    res[key] = l; 
+}
+let sort = Object.keys(res).sort((a,b)=> res[b]-res[a]);
+console.log(sort[0]);
+
+OUTPUT:
+CaptianAmerica
+
+
+9) Find the name with min characters and return the name:
+
+var friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAK chandran"];
+let res={};
+for(let key of friends){
+    let r = key.split("");
+    let l = r.length;
+    res[key] = l; 
+}
+let sort = Object.keys(res).sort((a,b)=> res[a]-res[b]);
+console.log(sort[0]);
+
+OUTPUT:
+Mari
+
+
+10) Find the average in the array below.
+Make sure you add only the numbers and do avg.
+
+const friendsInfo = [6,12,'Mari',1,true,'Munnabai','200','CaptianAmerica',8,10];
+let count =0;
+for(let key of friendsInfo){
+    if(typeof(key) == typeof(1)){
+        count += key;
+    }
+}
+console.log(count);
+
+OUTPUT:
+37
+
+
+11) Print the contents of the input variable
+
+var input = [["0001","Roman Alamsyah","Bandar Lampung","21/05/1989","Membaca"],["0002","Dika Sembiring","Medan","10/10/1992","Bermain Gitar"],
+["0003","Winona","Ambon","25/12/1965","Memasak"],
+["0004","Bintang Senjaya","Martapura","6/4/1970","Berkebun"]
+];
+for(let key of input){
+    
+    console.log(key);
+}
+
+OUTPUT:
+[ '0001',
+  'Roman Alamsyah',
+  'Bandar Lampung',
+  '21/05/1989',
+  'Membaca' ]
+[ '0002',
+  'Dika Sembiring',
+  'Medan',
+  '10/10/1992',
+  'Bermain Gitar' ]
+[ '0003', 'Winona', 'Ambon', '25/12/1965', 'Memasak' ]
+[ '0004', 'Bintang Senjaya', 'Martapura', '6/4/1970', 'Berkebun']
+
+
+
+1) Write a code to print the numbers in the array
+
+(i) 
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+console.log(numsArr.join(""));
+
+OUTPUT:
+1234567891011
+
+(ii) 
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+console.log(numsArr.join(","));
+
+ OUTPUT:
+1,2,3,4,5,6,7,8,9,10,11
+
+
+(iii) Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let r = numsArr.reverse();
+console.log(r.join(" "));
+
+OUTPUT:
+11 10 9 8 7 6 5 4 3 2 1
+
+(iv) Write a code to replace the array value — If the number is even, replace it with ‘even’
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for(let key of numsArr){
+    if(key%2 === 0){
+        numsArr.splice(numsArr.indexOf(key),1,"even");
+    }
+}
+console.log(numsArr);
+
+OUTPUT:
+[ 1, 'even', 3, 'even', 5, 'even', 7, 'even', 9, 'even', 11 ]
+
+
+(V) Write a code to replace the array value — If the index is even, replace it with ‘even’.
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for(let key in numsArr){
+    if(key%2 === 0){
+        numsArr.splice(key,1,"even");
+    }
+}
+console.log(numsArr);
+
+OUTPUT:
+[ 'even', 2, 'even', 4, 'even', 6, 'even', 8, 'even', 10, 'even' ]
+
+
+(vi) Write a code to add all the numbers in the array
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let count =0;
+for(let key of numsArr){
+    count += key;
+}
+console.log(count);
+
+OUTPUT:
+66
+
+
+(vii) Write a code to add the even numbers only
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let count =0;
+for(let key of numsArr){
+    if(key%2 === 0){
+        count+=key;
+    }
+}
+console.log(count);
+
+OUTPUT:
+30
+
+
+(viii) Write a code to add the even numbers and subract the odd numbers
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let count =100;
+for(let key of numsArr){
+    if(key%2 === 0){
+        count+=key;
+    }else{
+        count -= key;
+    }
+}
+console.log(count);
+
+OUTPUT:
+94
+
+
+(ix) Write a code to print inner arrays
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for(let key of numsArr){
+    console.log(key);
+}
+
+OUTPUT:
+[ 1, 2, 3, 4, 5 ]
+[ 6, 7, 8, 9, 10, 11 ]
+
+
+(X) Write a code to print elements in the inner arrays
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+let res=[];
+for(let key of numsArr ){
+    res.push(key.join(""));
+}
+console.log(res.join(""));
+
+OUTPUT:
+1234567891011
+
+
+(xi) Write a code to replace the array value — If the index is even, replace it with ‘even’.
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+let res=[];
+for(let key of numsArr){
+    for(let i in key){
+        if(i%2 === 0){
+            key.splice(i,1,"even");
+        }
+    }
+}
+console.log(numsArr);
+
+OUTPUT:
+[ [ 'even', 2, 'even', 4, 'even' ],
+  [ 'even', 7, 'even', 9, 'even', 11 ] ]
+
+
+(xii) Write a code to print elements in the inner arrays in reverse
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+let con = numsArr[0].concat(numsArr[1]);
+console.log(con.reverse().join(" "));
+
+OUTPUT:
+11 10 9 8 7 6 5 4 3 2 1
+
+
+(xiii) Write a code to add elements in the inner arrays based on odd or even values
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+let con = numsArr[0].concat(numsArr[1]);
+let odd_sum =0;
+let even_sum =0;
+for(let key of con){
+    if(key%2 === 0){
+        even_sum += key;
+    }else{
+        odd_sum += key;
+    }
+}
+console.log(odd_sum);
+console.log(even_sum);
+
+OUTPUT:
+36
+30
+
+
+GUVI: Zen Class — Part 3: Find the culprits and nail them — debugging javascript
+
+1) Fix the code to get the largest of three.(1,2,3)
+
+var lar = (a,b,c) => {
+if(a>b && a>c) return a;
+else if (b>a && b>c) return b;
+else return c;
+};
+
+console.log(lar(1,2,3));
+
+OUTPUT:
+3
+
+
+2) Fix the code to Sum of the digits present in the number
+
+
+function add(n){
+    let sum = 0;
+    for(i=0;i<n.length;i++){
+        sum += +n[i];
+        
+    }
+    return sum;
+}
+
+console.log(add("123"));
+
+OUTPUT:
+6
+
+
+3) Fix the code to Sum of all numbers using IIFE function
+
+const arr = [9,8,5,6,4,3,2,1];
+
+(function(){
+    let sum =0;
+    for(let key of arr){
+        sum += key;
+    }
+    console.log(sum);
+})();
+
+OUTPUT:
+38
+
+
+4) Fix the code to gen Title caps.
+
+var arr = ["guvi","geek","zen","fullstack"];
+
+(function(){
+    for(let key of arr){
+        let r =[];
+        r.push(key)
+        console.log(r.map(words=> words[0].toUpperCase() + words.substr(1)).join(""));
+    }
+})();
+
+OUTPUT:
+Guvi
+Geek
+Zen
+Fullstack
+
+
+6) Fix the code to sum the number in that array
+
+const num = [10, 20, 30, 40,50,60,70,80,90,100];
+(function (){
+    let sum=0;
+    for(let key of num){
+        sum += key;
+    }
+    console.log(sum);
+})();
+
+OUTPUT:
+550
+
+
+7) Fix the code to rotate an array by k times and return rotated array using IIFE function
+
+var arr = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+var k = 3;
+
+(function(){
+    for(i=0;i<k;i++){
+        arr.push(arr[i]);
+    }
+    for(i=0;i<k;i++){
+        arr.shift();
+    }
+    console.log(arr);
+    
+})();
+
+OUTPUT:
+[ 6, 8, 6, 1, 9, 10, 12, 13, 1, 2, 3 ]
+
+
+8) print all odd numbers in an array using IIFE function
+
+var arr = [1, 2, 3, 5, 7, 79, 7, 2, 6, 9, 4];
+
+(function(){
+    let sum_odd=0;
+    for(let key of arr){
+        if(key%2 !==0){
+            sum_odd+=key;
+        }
+    }
+    console.log(sum_odd);
+})();
+
+OUTPUT:
+111
+
+
+9) Fix the code
+
+var array =[[["firstname","vasanth"],["lastname","Raje"],["age",24],["role","JSWizard"]],[["firstname","sri"],["lastname","Devi"],["age",28],["role", "Coder"]]];
+var final=[];
+var new_object={};
+while(array.length!==0)
+{
+ var outer_remove = array.shift();
+ 
+ while(outer_remove.length!==0)
+ {
+ var inner_remove = outer_remove.shift();
+ var key = inner_remove[0];
+ var value =inner_remove[1];
+ new_object[key]=value;
+ }
+ final.push(new_object);
+}
+console.log(final);
+
+OUTPUT:
+
+[ { firstname: 'sri', lastname: 'Devi', age: 28, role: 'Coder' },
+  { firstname: 'sri', lastname: 'Devi', age: 28, role: 'Coder' } ]
+
+
+10) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
